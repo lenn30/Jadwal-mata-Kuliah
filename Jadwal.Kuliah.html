@@ -1,53 +1,101 @@
-<!DOSCTYPE html> 
-    <html lang="id">
-        <head> 
-            <meta name="viewsport" content="width=device-width, initial-scale=1.0">
-            <tittle> Jadwal Kuliah BD A </tittle>
-            <style>
-                td{
-                    text-align: center;
-                }
-            </style>
-            </head>
-            <body> 
-                <table border="1" width="80%" align="center">
-                    <thead>
-                        <tr>
-                            <th>Sesi/Hari</th>
-                            <th>Senin</th>
-                            <th>Selasa</th>
-                            <th>Rabu</th>
-                            <th>Kamis</th>
-                            <th>Jumat</th>
-                            </tr>
-                    <tbody> </tbody>
-                    <tr> 
-                        <td>1</td>
-                        <td colspan="2">kosong</td>
-                        
+<!DOCTYPE html> 
+<html lang="id">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah BD A</title>
+    <style> 
+        body { 
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #e3f2fd; 
+        }
 
-                        <td>Pemograman web</td>
-                        <td>kosong</td>
-                        <td>Statistika</td>
-                    </tr>
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
 
-                    <tr> 
-                        <td>2</td>
-                        <td colspan="2">kosong</td>
-                        <td>Microeconomics</td>
-                        <td>Prinsip-prinsip Akuntansi</td>
-                        <td>Ibadah/Kosong</td>
-                    </tr>
-                    <tr> 
-                        <td>3</td>
-                        <td>Sistem Basis Data</td>
-                        <td>Brand and Social Media Managment</td>
-                        <td>Hukum Bisnis</td>
-                        <td colspan="2">kosong</td>
-                    </tr>
-                    <footer style="margin-top: 20px; text-align: center;">
-                        <p>Institut Teknologi dan Bisnis Sabda Setia</p>
-                        <p>Bisnis Digital</p>
-                    </footer>
-                
-            </body>
+        table { 
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 2px solid #85b8de;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #85b8de; 
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f0f8ff;
+        }
+
+        tr:hover {
+            background: #d4eaf8; 
+            transition: 0.3s;
+        }
+
+        footer {
+            margin-top: 20px; 
+            text-align: center;
+            font-size: 14px;
+            color: #5a8bb5;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <h2>Jadwal Kuliah BD A</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sesi/Hari</th>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jumat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>1</td>
+                    <td colspan="2">Kosong</td>
+                    <td>Pemrograman Web</td>
+                    <td>Kosong</td>
+                    <td>Statistika</td>
+                </tr>
+                <tr> 
+                    <td>2</td>
+                    <td colspan="2">Kosong</td>
+                    <td>Microeconomics</td>
+                    <td>Prinsip-prinsip Akuntansi</td>
+                    <td>Ibadah/Kosong</td>
+                </tr>
+                <tr> 
+                    <td>3</td>
+                    <td>Sistem Basis Data</td>
+                    <td>Brand and Social Media Management</td>
+                    <td>Hukum Bisnis</td>
+                    <td colspan="2">Kosong</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Institut Teknologi dan Bisnis Sabda Setia</p>
+        <p>Bisnis Digital</p>
+    </footer>
+</body>
+</html>
